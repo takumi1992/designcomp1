@@ -1,0 +1,312 @@
+* { box-sizing: border-box; } h1,h2,h3,h4,h5,h6,p,a,li { line-height: 1.2; font-family: ‘ヒラギノ明朝 ProN’,’Hiragino Mincho ProN’,’Yu Mincho Light’,’YuMincho’,’Yu Mincho’,’游明朝体’,sans-serif; } a:hover { opacity: .5; transition: .3s; }
+
+.wrap{
+  overflow: hidden;
+}
+/* ヘッダー */
+.header-logo{
+  height: 60px;
+  padding-left: 15px;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.header-nav ul{
+   display: flex;
+}
+
+.header-nav ul li{
+  list-style: none;
+  padding: 0 30px;
+}
+
+.header-nav ul li a{
+  color: black;
+  text-decoration: none;
+}
+
+.main-lead{
+  font-size: 48px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+}
+
+.header-conteiner{
+  position: relative;
+  height: 800px;
+  background-image: url(img-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sp-menu{
+  display: none;
+  
+}
+
+@media screen and (max-width: 960px){
+  .header-logo{
+    height: 26px;
+    padding-left: 20px;
+  }
+  .sp-menu{
+    display: block;
+    padding-right:20px ;
+  }
+  .header-nav{
+    display: none;
+  }
+  .main-lead{
+    font-size: 24px;
+  }
+  .header-conteiner{
+      height: 342px;
+    }
+}
+
+/* news */
+
+.news{
+  margin-top: 90px;
+}
+
+.h2-ttl{
+  text-align: center;
+  font-size: 36px;
+}
+
+.news-list{
+  width: 100%;
+  max-width: 700px;
+  margin: 70px auto 0;
+}
+
+.news-list li{
+  list-style: none;
+  padding: 20px 0;
+  border-bottom: 1px solid black;
+}
+
+.news-list li a{
+  color: black;
+  text-decoration: none;
+  
+}
+
+.news-border{
+  border: 1px solid black;
+  padding: 5px 8px;
+  font-size: 11px;
+  margin: 0 30px;
+}
+
+  @media screen and (max-width: 960px){
+    .news{
+      margin-top: 50px;
+    }
+
+    .h2-ttl{
+      font-size: 24px;
+    }
+
+    .news-list{
+      padding: 0 20px;
+      margin-top: 10px;
+    }
+
+    .news-span{
+      font-size: 13px;
+      margin-bottom: 15px;
+      display: block;
+    }
+
+    .news-border{
+      margin: 0 15px;
+    }
+  }
+
+  /* case */
+
+  .case{
+    padding-top: 180px;
+  }
+
+.case-conteiner{
+  padding-top: 90px;
+  display: flex;
+}
+
+.case-contents{
+  width: 50%;
+  text-align: center;
+
+}
+
+.case-contents.case-img{
+  width: 440px;
+}
+
+.case-contents h3{
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+.case-contents p{
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.case-btn{
+  width: 300px;
+  display: block;
+  margin: 15px auto 0;
+}
+
+.case-btn img{
+  width: 100%;
+  
+}
+
+.case-art{
+  text-align: center;
+  margin-top: 80px;
+}
+
+.case-art a{
+  text-emphasis: none;
+  color: black;
+  border: 1px solid black;
+  padding: 12px 40px;
+}
+
+  @media screen and (max-width: 960px){
+    .case-conteiner{
+      flex-direction: column;
+    }
+    .case-contents.case-img{
+      width: 100%;
+    }
+  .case-contents{
+    width: 100%;
+    padding: 0 0px;
+  }
+  .case{
+    padding-top: 100px;
+  }
+  .case-conteiner{
+    padding-top: 30px;
+  }
+
+  .case-contents:last-child{
+    margin-top: 30px;
+  }
+  .case-contents h3{
+    font-size: 20px;
+  }
+  
+  .case-contents p{
+    font-size: 12px;
+  }
+  }
+  /* banner */
+
+  .banner{
+    display: flex;
+    margin-top: 180px;
+    
+  }  
+  
+ .banner a{
+   max-width: clac(100%/3);
+ } 
+
+ .banner a img{
+   width: 100%;
+ }
+
+ @media screen and (max-width: 960px){
+  .banner{
+    flex-direction: column;
+  }
+  .banner a{
+    max-width: 100%;
+  } 
+ }
+
+ footer{
+   background: #000;
+   padding: 30px 0 10px;
+ }
+
+ .footerconteiner div{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+.footer-logo{
+  width: 92px;
+}
+
+.footer-logo img{
+  width: 100%;
+}
+
+.footer-nav{
+  display: flex;
+}
+
+.footer-nav li{
+  padding: 0 30px;
+}
+
+.footer-nav li a{
+  color: white;
+  text-decoration: none;
+}
+
+.footerconteiner{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+small{
+  margin-top: 60px;
+  color: #fff;
+  display: block;
+  text-align: center;
+}
+
+@media screen and (max-width: 960px){
+  .footerconteiner div{
+    flex-direction: column-reverse;
+  }
+
+  .footer-nav{
+    flex-direction: column;
+  }
+  .footer-nav li{
+    text-align: center;
+    margin-top: 20px;
+  }
+  footer{
+   padding-top: 10px;
+  }
+  .footer-logo{
+    margin-top: 50px;
+  }
+
+  small{
+    margin-top: 20px;
+  }
+}
